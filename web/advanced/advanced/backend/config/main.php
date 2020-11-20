@@ -34,6 +34,12 @@ return [
                 ],
             ],
         ],
+        'components' => [
+            'authManager' => [
+                'class' => 'yii\rbac\PhpManager',
+            ],
+            // ...
+        ],
         'errorHandler' => [
             'errorAction' => 'site/error',
         ],
