@@ -7,9 +7,67 @@
 
     android:orientation="vertical"
     android:background="@drawable/background"
-
     tools:context=".MainActivity">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:background="#3fff"
+        android:gravity="center">
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:width="4dp"
+            android:background="@drawable/circle"
+            android:gravity="center"
+            android:text="Horizon"
+            android:textColor="#ffffff" />
 
+        <EditText
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:hint="Username"
+            android:textColorHint="#fffbf8"
+            android:paddingStart="15dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/btn"
+            />
+        <EditText
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:hint="Password"
+            android:textColorHint="#fffbf8"
+            android:paddingStart="15dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/btn"
+            />
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Keep me sign in"
+            android:textColor="#fffbf8"
+            android:hint="#fffbf8"
+            android:layout_marginTop="10dp"
+            android:buttonTint="#fffbf8"
+            />
+        <Button
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/btnblue"
+            android:text="Sign in"
+            android:textAllCaps="false"
+            app:backgroundTint="#2196F3"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Don't have an account?"
+            android:layout_marginTop="10dp"
+            android:textColor="#fffbf8"/>
+    </LinearLayout>
 </LinearLayout>
+
