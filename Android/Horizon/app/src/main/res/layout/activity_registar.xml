@@ -17,6 +17,7 @@
         android:background="#3fff"
         android:gravity="center">
 
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -29,7 +30,43 @@
         <EditText
             android:layout_width="250dp"
             android:layout_height="40dp"
+            android:hint="Name"
+            android:maxLength="10"
+            android:textColor="@color/white"
+            android:textColorHint="#fffbf8"
+            android:paddingStart="15dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/btn"
+            />
+
+        <EditText
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:hint="Last Name"
+            android:maxLength="10"
+            android:textColor="@color/white"
+            android:textColorHint="#fffbf8"
+            android:paddingStart="15dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/btn"
+            />
+
+        <EditText
+            android:layout_width="250dp"
+            android:layout_height="40dp"
             android:hint="Username"
+            android:maxLength="10"
+            android:textColor="@color/white"
+            android:textColorHint="#fffbf8"
+            android:paddingStart="15dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/btn"
+            />
+
+        <EditText
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:hint="Email"
             android:maxLength="10"
             android:textColor="@color/white"
             android:textColorHint="#fffbf8"
@@ -41,41 +78,51 @@
             android:layout_width="250dp"
             android:layout_height="40dp"
             android:hint="Password"
+            android:maxLength="10"
             android:inputType="textPassword"
             android:textColor="@color/white"
             android:textColorHint="#fffbf8"
             android:paddingStart="15dp"
-            android:layout_marginTop="5dp"
+            android:layout_marginTop="10dp"
             android:background="@drawable/btn"
             />
-        <CheckBox
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Keep me sign in"
-            android:textColor="#fffbf8"
-            android:hint="#fffbf8"
+
+        <EditText
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:hint="ver implementaçao de date"
+            android:maxLength="10"
+            android:textColor="@color/white"
+            android:textColorHint="#fffbf8"
+            android:paddingStart="15dp"
             android:layout_marginTop="10dp"
-            android:buttonTint="#fffbf8"
+            android:background="@drawable/btn"
             />
+
         <Button
-            android:id="@+id/login_Menu"
             android:layout_width="250dp"
             android:layout_height="40dp"
             android:layout_marginTop="10dp"
             android:background="@drawable/btnblue"
-            android:text="Sign in"
+            android:text="Register"
             android:textAllCaps="false"
             app:backgroundTint="#2196F3"
             />
 
         <TextView
-            android:id="@+id/login_next"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:text="Don't have an account?"
+            android:text="Already have an account!!"
+            android:textColor="#fffbf8" />
+
+        <TextView
+            android:id="@+id/Register_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Login"
             android:textColor="#fffbf8" />
 
     </LinearLayout>
 </LinearLayout>
-
