@@ -36,7 +36,7 @@ public class Login extends AppCompatActivity {
         });
     }
     public void openMenu(){
-        Intent intent = new Intent(this, MapsActivity.class);
+        Intent intent = new Intent(this, MapaLocalizacao.class);
         startActivity(intent);
     }
 
