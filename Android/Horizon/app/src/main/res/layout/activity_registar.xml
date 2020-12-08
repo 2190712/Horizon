@@ -6,16 +6,16 @@
     android:layout_height="match_parent"
 
     android:orientation="vertical"
-    android:background="@drawable/background"
+    android:background="@drawable/test"
     tools:context=".Login">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:padding="10dp"
         android:background="#3fff"
-        android:gravity="center">
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="10dp">
 
 
         <TextView
@@ -30,74 +30,69 @@
         <EditText
             android:layout_width="250dp"
             android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/btn"
             android:hint="Name"
             android:maxLength="10"
-            android:textColor="@color/white"
-            android:textColorHint="#fffbf8"
             android:paddingStart="15dp"
-            android:layout_marginTop="10dp"
-            android:background="@drawable/btn"
-            />
+            android:textColor="@color/white"
+            android:textColorHint="#fffbf8" />
 
         <EditText
             android:layout_width="250dp"
             android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/btn"
             android:hint="Last Name"
             android:maxLength="10"
-            android:textColor="@color/white"
-            android:textColorHint="#fffbf8"
             android:paddingStart="15dp"
-            android:layout_marginTop="10dp"
-            android:background="@drawable/btn"
-            />
+            android:textColor="@color/white"
+            android:textColorHint="#fffbf8" />
 
         <EditText
             android:layout_width="250dp"
             android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/btn"
             android:hint="Username"
             android:maxLength="10"
-            android:textColor="@color/white"
-            android:textColorHint="#fffbf8"
             android:paddingStart="15dp"
-            android:layout_marginTop="10dp"
-            android:background="@drawable/btn"
-            />
+            android:textColor="@color/white"
+            android:textColorHint="#fffbf8" />
 
         <EditText
             android:layout_width="250dp"
             android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/btn"
             android:hint="Email"
             android:maxLength="10"
-            android:textColor="@color/white"
-            android:textColorHint="#fffbf8"
             android:paddingStart="15dp"
-            android:layout_marginTop="10dp"
-            android:background="@drawable/btn"
-            />
-        <EditText
-            android:layout_width="250dp"
-            android:layout_height="40dp"
-            android:hint="Password"
-            android:maxLength="10"
-            android:inputType="textPassword"
             android:textColor="@color/white"
-            android:textColorHint="#fffbf8"
-            android:paddingStart="15dp"
-            android:layout_marginTop="10dp"
-            android:background="@drawable/btn"
-            />
+            android:textColorHint="#fffbf8" />
 
         <EditText
             android:layout_width="250dp"
             android:layout_height="40dp"
-            android:hint="ver implementaçao de date"
-            android:maxLength="10"
-            android:textColor="@color/white"
-            android:textColorHint="#fffbf8"
-            android:paddingStart="15dp"
             android:layout_marginTop="10dp"
             android:background="@drawable/btn"
-            />
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:maxLength="10"
+            android:paddingStart="15dp"
+            android:textColor="@color/white"
+            android:textColorHint="#fffbf8" />
+
+        <EditText
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/btn"
+            android:hint="ver implementaçao de date"
+            android:maxLength="10"
+            android:paddingStart="15dp"
+            android:textColor="@color/white"
+            android:textColorHint="#fffbf8" />
 
         <Button
             android:layout_width="250dp"
@@ -106,8 +101,7 @@
             android:background="@drawable/btnblue"
             android:text="Register"
             android:textAllCaps="false"
-            app:backgroundTint="#2196F3"
-            />
+            app:backgroundTint="#2196F3" />
 
         <TextView
             android:layout_width="wrap_content"
