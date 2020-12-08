@@ -8,8 +8,10 @@ import androidx.fragment.app.FragmentActivity;
 
 import android.Manifest;
 import android.content.pm.PackageManager;
+import android.content.res.Resources;
 import android.location.Location;
 import android.os.Bundle;
+import android.util.Log;
 import android.widget.Toast;
 
 import com.google.android.gms.location.FusedLocationProviderClient;
@@ -20,6 +22,7 @@ import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.internal.ICameraUpdateFactoryDelegate;
 import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.MapStyleOptions;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
@@ -28,6 +31,8 @@ public class MapaLocalizacao extends AppCompatActivity {
     //initialize variable
     SupportMapFragment supportMapFragment;
     FusedLocationProviderClient client;
+    private static final String TAG = MapaLocalizacao.class.getSimpleName();
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -74,12 +79,26 @@ public class MapaLocalizacao extends AppCompatActivity {
                     supportMapFragment.getMapAsync(new OnMapReadyCallback() {
                         @Override
                         public void onMapReady(GoogleMap googleMap) {
+                            //MapStyle
+                            try {
+                                // Customise the styling of the base map using a JSON object defined
+                                // in a raw resource file.
+                                boolean success = googleMap.setMapStyle(
+                                        MapStyleOptions.loadRawResourceStyle(
+                                                MapaLocalizacao.this, R.raw.map_style));
+
+                                if (!success) {
+                                    Log.e(TAG, "Style parsing failed.");
+                                }
+                            } catch (Resources.NotFoundException e) {
+                                Log.e(TAG, "Can't find style.", e);
+                            }
                             //Initialize Lat Lng
                             LatLng latLng = new LatLng(location.getLatitude(),location.getLongitude());
                             //Create marker options
                             MarkerOptions options = new MarkerOptions().position(latLng).title("I am There");
                             //Zoom map
-                            googleMap.animateCamera(CameraUpdateFactory.newLatLngZoom(latLng, 20));
+                            googleMap.animateCamera(CameraUpdateFactory.newLatLngZoom(latLng, 18));
                             //Add marker on map
                             googleMap.addMarker(options);
                         }

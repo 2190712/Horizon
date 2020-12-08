@@ -2,4 +2,5 @@
     <string name="app_name">Horizon</string>
     <string name="title_activity_maps">Map</string>
     <string name="map_key" translatable="false">AIzaSyA6Qg1oLCw1Nv16tC49WRrMx-9i011DB0w</string>
+    <string name="map_id">f392a01f0f01ce27</string>
 </resources>
