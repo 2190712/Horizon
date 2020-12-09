@@ -38,6 +38,7 @@ public class MapaLocalizacao extends AppCompatActivity {
     //initialize variable
     SupportMapFragment supportMapFragment;
     FusedLocationProviderClient client;
+
     private static final String TAG = MapaLocalizacao.class.getSimpleName();
 
 
