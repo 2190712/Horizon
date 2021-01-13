@@ -13,7 +13,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Horizon">
-        <activity android:name=".Walkthrough"></activity>
+        <activity android:name=".UserProfile"></activity>
+        <activity android:name=".Walkthrough" />
         <activity android:name=".MapaLocalizacao" />
 
         <meta-data
