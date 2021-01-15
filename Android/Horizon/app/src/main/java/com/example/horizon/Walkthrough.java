@@ -98,7 +98,7 @@ public class Walkthrough extends AppCompatActivity {
     }
 
     public void openMenu(){
-        Intent intent = new Intent(this, UserProfile.class);
+        Intent intent = new Intent(this, MainMenu.class);
         startActivity(intent);
         finish();
     }

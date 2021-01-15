@@ -28,6 +28,5 @@ public class UserProfile extends AppCompatActivity {
     public void openMenu(){
         Intent intent = new Intent(this, MapaLocalizacao.class);
         startActivity(intent);
-        finish();
     }
 }

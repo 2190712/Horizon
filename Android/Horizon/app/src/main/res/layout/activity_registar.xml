@@ -4,9 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-
     android:orientation="vertical"
-    android:background="@drawable/background"
+    android:background="#262B39"
     tools:context=".Login">
 
     <LinearLayout
@@ -88,9 +87,10 @@
             android:layout_height="40dp"
             android:layout_marginTop="10dp"
             android:background="@drawable/btn"
-            android:hint="ver implementaçao de date"
+            android:hint="Insert Date"
             android:maxLength="10"
             android:paddingStart="15dp"
+            android:textAlignment="center"
             android:textColor="@color/white"
             android:textColorHint="#fffbf8" />
 
