@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#262B39"
+    android:background="#F6E3CA"
     tools:context=".MainMenu">
 
 
@@ -13,7 +13,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"
-        app:backgroundTint="#101A4E"
+        app:backgroundTint="#262B39"
         app:fabCradleMargin="10dp"
         app:fabCradleRoundedCornerRadius="20dp"
         app:fabCradleVerticalOffset="5dp">
@@ -64,8 +64,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/ic_add"
-        app:backgroundTint="#2196F3"
-        app:layout_anchor="@id/bottomAppBar">
+        app:backgroundTint="#65A7DC"
+        app:layout_anchor="@id/bottomAppBar"
+        app:rippleColor="#E91E63">
 
     </com.google.android.material.floatingactionbutton.FloatingActionButton>
 

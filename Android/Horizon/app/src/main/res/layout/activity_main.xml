@@ -12,10 +12,10 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:padding="10dp"
         android:background="#3fff"
-        android:gravity="center">
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="10dp">
 
         <TextView
             android:layout_width="wrap_content"
@@ -29,34 +29,34 @@
         <EditText
             android:layout_width="250dp"
             android:layout_height="40dp"
-            android:hint="Username"
-            android:maxLength="10"
-            android:textColor="@color/white"
-            android:textColorHint="#fffbf8"
-            android:paddingStart="15dp"
             android:layout_marginTop="10dp"
             android:background="@drawable/btn"
-            />
+            android:hint="Username"
+            android:maxLength="10"
+            android:paddingStart="15dp"
+            android:textColor="@color/white"
+            android:textColorHint="#fffbf8" />
+
         <EditText
             android:layout_width="250dp"
             android:layout_height="40dp"
-            android:hint="Password"
-            android:inputType="textPassword"
-            android:textColor="@color/white"
-            android:textColorHint="#fffbf8"
-            android:paddingStart="15dp"
             android:layout_marginTop="5dp"
             android:background="@drawable/btn"
-            />
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:paddingStart="15dp"
+            android:textColor="@color/white"
+            android:textColorHint="#fffbf8" />
+
         <CheckBox
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Keep me sign in"
-            android:textColor="#fffbf8"
-            android:hint="#fffbf8"
             android:layout_marginTop="10dp"
             android:buttonTint="#fffbf8"
-            />
+            android:hint="#fffbf8"
+            android:text="Remember me"
+            android:textColor="#fffbf8" />
+
         <Button
             android:id="@+id/login_Menu"
             android:layout_width="250dp"
@@ -65,8 +65,7 @@
             android:background="@drawable/btnblue"
             android:text="Sign in"
             android:textAllCaps="false"
-            app:backgroundTint="#2196F3"
-            />
+            app:backgroundTint="#2196F3" />
 
         <TextView
             android:id="@+id/login_next"
@@ -75,13 +74,6 @@
             android:layout_marginTop="10dp"
             android:text="Don't have an account?"
             android:textColor="#fffbf8" />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:text="About us"
-            android:textColor="#fffbf8" />
 
     </LinearLayout>
 </LinearLayout>
-
