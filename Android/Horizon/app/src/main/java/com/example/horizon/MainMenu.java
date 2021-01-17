@@ -101,5 +101,6 @@ public class MainMenu extends AppCompatActivity {
     private void openStats() {
         Intent intent = new Intent(this, Stats.class);
         startActivity(intent);
+        finish();
     }
 }
