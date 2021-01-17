@@ -84,16 +84,19 @@ public class MainMenu extends AppCompatActivity {
     private void openMaps() {
         Intent intent = new Intent(this, MapaLocalizacao.class);
         startActivity(intent);
+        finish();
     }
 
     private void openPerfil() {
         Intent intent = new Intent(this, UserProfile.class);
         startActivity(intent);
+        finish();
     }
 
     private void openSettings() {
         Intent intent = new Intent(this, Settings.class);
         startActivity(intent);
+        finish();
     }
     private void openStats() {
         Intent intent = new Intent(this, Stats.class);

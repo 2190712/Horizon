@@ -20,7 +20,7 @@
             android:layout_height="40dp"
             android:layout_marginTop="10dp"
             android:background="@drawable/btnblue"
-            android:text="Logout"
+            android:text="Create"
             android:textAllCaps="false"
             app:backgroundTint="#2196F3" />
 
@@ -30,7 +30,7 @@
             android:layout_height="40dp"
             android:layout_marginTop="10dp"
             android:background="@drawable/btnblue"
-            android:text="Logout"
+            android:text="Edit"
             android:textAllCaps="false"
             app:backgroundTint="#2196F3" />
 
