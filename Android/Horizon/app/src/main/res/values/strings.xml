@@ -3,4 +3,11 @@
     <string name="title_activity_maps">Map</string>
     <string name="map_key" translatable="false">AIzaSyA6Qg1oLCw1Nv16tC49WRrMx-9i011DB0w</string>
     <string name="map_id">f392a01f0f01ce27</string>
+    <string name="distancia_total">Distancia Total:</string>
+    <string name="n_voltas_total">Número de Voltas Total:</string>
+    <string name="ganho_elevacao">Ganho Elevação Total:</string>
+    <string name="maior_volta">Maior Volta:</string>
+    <string name="tempo_total" >Tempo Total de Atvidades:</string>
+    <string name="estatisticas_de_utilizador">Estatisticas de utilizador</string>
+
 </resources>

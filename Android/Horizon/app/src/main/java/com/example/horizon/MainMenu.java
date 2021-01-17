@@ -50,6 +50,7 @@ public class MainMenu extends AppCompatActivity {
         ImageView img2 = (ImageView) findViewById(R.id.imagestats);
         img2.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
+                openStats();
             }
         });
 
@@ -92,6 +93,10 @@ public class MainMenu extends AppCompatActivity {
 
     private void openSettings() {
         Intent intent = new Intent(this, Settings.class);
+        startActivity(intent);
+    }
+    private void openStats() {
+        Intent intent = new Intent(this, Stats.class);
         startActivity(intent);
     }
 }
