@@ -31,29 +31,18 @@
             android:layout_height="40dp"
             android:layout_marginTop="10dp"
             android:background="@drawable/btn"
-            android:hint="Name"
-            android:maxLength="10"
-            android:paddingStart="15dp"
-            android:textColor="@color/white"
-            android:textColorHint="#fffbf8" />
-
-        <EditText
-            android:layout_width="250dp"
-            android:layout_height="40dp"
-            android:layout_marginTop="10dp"
-            android:background="@drawable/btn"
-            android:hint="Last Name"
-            android:maxLength="10"
-            android:paddingStart="15dp"
-            android:textColor="@color/white"
-            android:textColorHint="#fffbf8" />
-
-        <EditText
-            android:layout_width="250dp"
-            android:layout_height="40dp"
-            android:layout_marginTop="10dp"
-            android:background="@drawable/btn"
             android:hint="Username"
+            android:maxLength="10"
+            android:paddingStart="15dp"
+            android:textColor="@color/white"
+            android:textColorHint="#fffbf8" />
+
+        <EditText
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/btn"
+            android:hint="Password"
             android:maxLength="10"
             android:paddingStart="15dp"
             android:textColor="@color/white"
@@ -75,7 +64,18 @@
             android:layout_height="40dp"
             android:layout_marginTop="10dp"
             android:background="@drawable/btn"
-            android:hint="Password"
+            android:hint="Name"
+            android:maxLength="10"
+            android:paddingStart="15dp"
+            android:textColor="@color/white"
+            android:textColorHint="#fffbf8" />
+
+        <EditText
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/btn"
+            android:hint="Last Name"
             android:inputType="textPassword"
             android:maxLength="10"
             android:paddingStart="15dp"
@@ -87,12 +87,35 @@
             android:layout_height="40dp"
             android:layout_marginTop="10dp"
             android:background="@drawable/btn"
-            android:hint="Insert Date"
+            android:hint="Phone Number"
             android:maxLength="10"
             android:paddingStart="15dp"
-            android:textAlignment="center"
             android:textColor="@color/white"
             android:textColorHint="#fffbf8" />
+
+        <EditText
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/btn"
+            android:hint="Age"
+            android:maxLength="10"
+            android:paddingStart="15dp"
+            android:textColor="@color/white"
+            android:textColorHint="#fffbf8" />
+
+        <ExpandableListView
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/btn"
+            android:hint="Phone Number"
+            android:maxLength="10"
+            android:paddingStart="15dp"
+            android:textColor="@color/white"
+            android:textColorHint="#fffbf8">
+
+        </ExpandableListView>
 
         <Button
             android:layout_width="250dp"

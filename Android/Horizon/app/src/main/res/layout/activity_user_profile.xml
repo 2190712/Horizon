@@ -17,6 +17,7 @@
     </ImageView>
 
     <RelativeLayout
+        android:id="@+id/background"
         android:layout_width="match_parent"
         android:layout_height="225dp"
         android:background="@drawable/gradient">
@@ -42,32 +43,82 @@
     </androidx.cardview.widget.CardView>
 
     <TextView
+        android:id="@+id/user_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_toRightOf="@+id/imageCard"
-        android:layout_marginTop="185dp"
         android:layout_marginLeft="20dp"
+        android:layout_marginTop="185dp"
+        android:layout_toRightOf="@+id/imageCard"
         android:text="User Name"
         android:textColor="#fff"
         android:textSize="22dp">
 
     </TextView>
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/background"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/user_primeiro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Don't have an account?"
+            android:textColor="#000000">
+        </TextView>
+
+        <TextView
+            android:id="@+id/user_apelido"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Don't have an account?"
+            android:textColor="#000000">
+        </TextView>
+
+        <TextView
+            android:id="@+id/user_idade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Don't have an account?"
+            android:textColor="#000000">
+        </TextView>
+
+        <TextView
+            android:id="@+id/user_sex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Don't have an account?"
+            android:textColor="#000000">
+        </TextView>
+
+        <TextView
+            android:id="@+id/user_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Don't have an account?"
+            android:textColor="#000000">
+        </TextView>
+
+        <TextView
+            android:id="@+id/user_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Don't have an account?"
+            android:textColor="#000000">
+        </TextView>
 
 
+    </LinearLayout>
 
-
-
-
-
-
-    <Button
-        android:id="@+id/buttontest"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="17dp"
-        android:text="Button" />
 
 
 </RelativeLayout>

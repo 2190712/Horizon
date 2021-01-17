@@ -5,7 +5,17 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
+
+import com.android.volley.AuthFailureError;
+import com.android.volley.Request;
+import com.android.volley.RequestQueue;
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.StringRequest;
+import com.android.volley.toolbox.Volley;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -16,67 +26,71 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
+import java.text.BreakIterator;
+import java.util.HashMap;
+import java.util.Map;
 
 public class Stats extends AppCompatActivity {
+
+    private Object StringRequest;
+    private TextView post_response_text;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_stats);
-        new ParseTask().execute();
+        Button test = findViewById(R.id.data_test);
+        
+
+        TextView post_response_text = findViewById(R.id.get_response_data);
+
+                test.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                       postRequest();
+                    }
+                });
     }
-
-    private class ParseTask extends AsyncTask<Void, Void, String>{
-
-        HttpURLConnection urlConnection = null;
-        BufferedReader reader = null;
-        String resultJson = "";
-
-        @Override
-        protected String doInBackground(Void... params) {
-            try {
-
-                String site_url_json = "http://192.168.1.229:8888/user";
-                URL url = new URL(site_url_json);
-
-                urlConnection = (HttpURLConnection) url.openConnection();
-                urlConnection.setRequestMethod("GET");
-                urlConnection.connect();
-
-                InputStream inputStream = urlConnection.getInputStream();
-                StringBuffer buffer = new StringBuffer();
-
-                reader = new BufferedReader(new InputStreamReader(inputStream));
-
-                String line;
-                while ((line = reader.readLine()) != null) {
-                    buffer.append(line);
-                }
-
-                resultJson = buffer.toString();
-
-            }catch (Exception e){
-                e.printStackTrace();
+    private void postRequest(){
+        RequestQueue requestQueue = Volley.newRequestQueue(Stats.this);
+        String url = "http://192.168.1.229:8888/user";
+        StringRequest stringRequest = new StringRequest(Request.Method.POST, url, new Response.Listener<String>() {
+            @Override
+            public void onResponse(String response) {
+                post_response_text.setText("Post Data : " + response);
             }
-            return resultJson;
-        }
+        }, new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError error) {
 
-        @Override
-        protected void onPostExecute(String strJson) {
-            super.onPostExecute(strJson);
+                post_response_text.setText("Post Data Fail ");
 
-            try {
-                JSONArray jsonarray = new JSONArray(strJson);
-                JSONObject jsonobj = jsonarray.getJSONObject(0);
-
-                String result_json_text = jsonobj.getString("username");
-                Log.d("FOR_LOG", result_json_text);
-
-                TextView textView = (TextView)findViewById(R.id.test);
-                textView.setText(result_json_text);
-            }catch (JSONException e){
-                e.printStackTrace();
             }
-        }
+        }){
+            @Override
+            protected Map<String,String> getParams(){
+                Map<String,String> params = new HashMap<>();
+                params.put("username","Value_username");
+                params.put("password_hash","Value_password");
+                params.put("email","Value_email");
+                params.put("primeiro","Value_primeiro");
+                params.put("apelido","Value_apelido");
+                params.put("telemovel","Value_telemovel");
+                params.put("idade","Value_idade");
+                params.put("genero","Value_genero");
+                return params;
+            }
+
+            public Map<String, String> getHeader() throws AuthFailureError{
+                Map<String,String> params = new HashMap<String, String>();
+                params.put("Content-type","application/json");
+                return params;
+            }
+        };
+        requestQueue.add(stringRequest);
+
+
     }
 }
+
+
