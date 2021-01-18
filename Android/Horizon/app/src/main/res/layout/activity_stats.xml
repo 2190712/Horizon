@@ -16,14 +16,30 @@
         android:gravity="center"
         android:orientation="vertical">
 
-        <TextView
-            android:id="@+id/get_response_data"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+        <EditText
+            android:id="@+id/titulo"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
             android:layout_marginTop="10dp"
-            android:text="Don't have an account?"
-            android:textColor="@color/white">
-        </TextView>
+            android:background="@drawable/btn"
+            android:hint="Tittle"
+            android:maxLength="45"
+            android:paddingStart="15dp"
+            android:textColor="@color/white"
+            android:textColorHint="#fffbf8" />
+
+        <EditText
+            android:id="@+id/content"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/btn"
+            android:paddingStart="15dp"
+            android:hint="Notes"
+            android:textAlignment="viewStart"
+            android:textColor="@color/white"
+            android:textColorHint="#fffbf8" />
+
 
         <Button
             android:id="@+id/data_test"
@@ -31,7 +47,17 @@
             android:layout_height="40dp"
             android:layout_marginTop="10dp"
             android:background="@drawable/btnblue"
-            android:text="Post"
+            android:text="Add Note"
+            android:textAllCaps="false"
+            app:backgroundTint="#2196F3" />
+
+        <Button
+            android:id="@+id/back"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/btnblue"
+            android:text="Back"
             android:textAllCaps="false"
             app:backgroundTint="#2196F3" />
 

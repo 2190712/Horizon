@@ -7,23 +7,14 @@
     android:background="#F6E3CA"
     tools:context=".MainMenu">
 
-    <LinearLayout
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/notes"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:gravity="center">
 
+    </androidx.recyclerview.widget.RecyclerView>
 
-
-        <Button
-            android:id="@+id/photoAdd"
-            android:layout_width="250dp"
-            android:layout_height="40dp"
-            android:layout_marginTop="10dp"
-            android:background="@drawable/btnblue"
-            android:text="Add Photo"
-            android:textAllCaps="false"
-            app:backgroundTint="#2196F3" />
-    </LinearLayout>
 
     <com.google.android.material.bottomappbar.BottomAppBar
         android:id="@+id/bottomAppBar"

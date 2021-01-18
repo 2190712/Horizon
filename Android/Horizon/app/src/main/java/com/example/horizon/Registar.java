@@ -38,14 +38,14 @@ public class Registar extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_registar);
         Register=(TextView)findViewById(R.id.Registet);
-        editText_user = findViewById(R.id.user);
+        editText_user = findViewById(R.id.test);
         editText_pass = findViewById(R.id.pass);
         editText_email = findViewById(R.id.email);
-        editText_name = findViewById(R.id.email);
-        editText_lastname = findViewById(R.id.email);
-        editText_phone = findViewById(R.id.email);
-        editText_age = findViewById(R.id.email);
-        editText_sex = findViewById(R.id.email);
+        editText_name = findViewById(R.id.name);
+        editText_lastname = findViewById(R.id.lname);
+        editText_phone = findViewById(R.id.phone);
+        editText_age = findViewById(R.id.idade);
+        editText_sex = findViewById(R.id.sex);
 
         Register.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -60,13 +60,13 @@ public class Registar extends AppCompatActivity {
         com.android.volley.toolbox.StringRequest stringRequest = new StringRequest(Request.Method.POST, url, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
-                post_response_text.setText("Post Data : " + response);
+                post_response_text.setText(response);
             }
         }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
 
-                post_response_text.setText("Post Data Fail ");
+                post_response_text.setText("Data Fail");
 
             }
         }){
