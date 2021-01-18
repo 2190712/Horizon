@@ -8,107 +8,33 @@
     android:background="#262B39"
     tools:context=".Stats">
 
-    <Space
-        android:layout_width="match_parent"
-        android:layout_height="30dp"
-        android:layout_weight="0" />
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:background="#262B39">
-
-        <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="140dp"
-            android:layout_height="140dp"
-            android:layout_weight="0"
-
-            android:layout_marginLeft="30dp"
-            android:layout_marginRight="40dp"
-            app:srcCompat="@drawable/location" />
+        android:layout_height="match_parent"
+        android:layout_below="@+id/background"
+        android:gravity="center"
+        android:orientation="vertical">
 
         <TextView
-        android:id="@+id/distancia"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_weight="0"
-        android:text="@string/distancia_total" />
-    </LinearLayout>
-    <Space
-        android:layout_width="match_parent"
-        android:layout_height="30dp"
-        android:layout_weight="0" />
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#262B39"
-        android:orientation="horizontal">
-
-
-        <TextView
-            android:id="@+id/tempo_total"
+            android:id="@+id/get_response_data"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="40dp"
-            android:layout_marginRight="40dp"
-            android:layout_weight="0"
-            android:text="@string/tempo_total" />
+            android:layout_marginTop="10dp"
+            android:text="Don't have an account?"
+            android:textColor="@color/white">
+        </TextView>
 
-        <ImageView
-            android:id="@+id/imageView2"
-            android:layout_width="140dp"
-            android:layout_height="140dp"
-            android:layout_weight="0"
-
-            app:srcCompat="@drawable/chronometer" />
-
-
-    </LinearLayout>
-    <Space
-        android:layout_width="match_parent"
-        android:layout_height="30dp"
-        android:layout_weight="0" />
-    <LinearLayout
-
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#262B39"
-        android:orientation="horizontal">
-        <Space
-            android:layout_width="30dp"
-            android:layout_height="match_parent"
-            android:layout_weight="0" />
-        <ImageView
-            android:id="@+id/imageView3"
-            android:layout_width="140dp"
-            android:layout_height="140dp"
-            android:layout_weight="0"
-            app:srcCompat="@drawable/achievement" />
-
-        <TextView
-        android:id="@+id/ganho_elevacao"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_weight="0"
-        android:text="@string/ganho_elevacao" />
+        <Button
+            android:id="@+id/data_test"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/btnblue"
+            android:text="Post"
+            android:textAllCaps="false"
+            app:backgroundTint="#2196F3" />
 
     </LinearLayout>
-    <TextView
-        android:id="@+id/maior_volta"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_weight="0"
-
-        android:text="@string/maior_volta" />
-    <TextView
-        android:id="@+id/n_volta_total"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_weight="0"
-        android:text="@string/n_voltas_total" />
-
 
 </LinearLayout>
